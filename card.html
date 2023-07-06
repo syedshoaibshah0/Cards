@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style/style.css">
+        <STyle> .box{
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .box:before,
+        .box:after,
+        .box .box-content:before,
+        .box .box-content:after{
+            content: "";
+            background: #fcac0c75;
+            width: 25%;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition-duration: 0.35s;
+        }
+        .box:after{ left: 25%; }
+        .box .box-content:before{ left:50% }
+        .box .box-content:after{ left:75% }
+        .box:hover:before,
+        .box:hover:after,
+        .box:hover .box-content:before,
+        .box:hover .box-content:after{ transform: scaleX(1); }
+        .box img{
+            width: 100%;
+            height: auto;
+        }
+        .box-content{
+            color: #fff;
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            transition: all 0.4s ease 0.1s;
+        }
+        .box:hover .box-content{ opacity: 1; }
+        .box .title{
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 0 0 3px;
+        }
+        .box .post{
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+        .box .icon{
+            padding: 0;
+            margin: 0 0 5px;
+            list-style: none;
+            opacity: 0;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            z-index: 2;
+            transition: all 0.3s ease 0s;
+        }
+        .box:hover .icon{ opacity: 1; }
+        .box .icon li{
+            margin: 0 4px;
+            display: inline-block;
+        }
+        .box .icon li a{
+            color: #fff;
+            background: rgba(0,0,0,0.4);
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: block;
+            transition: all 0.35s ease 0s;
+        }
+        .box .icon li a:hover{
+            color: #fff;
+            background: transparent;
+            box-shadow: 0 0 0 2px #fff;
+        }
+        @media only screen and (max-width:990px){
+            .box{ margin: 0 0 30px; }
+        }
+    </STyle>
+        
+</head>
+
+<body>
+    <h1><b><i>Headphones & Headsets</i></b></h1>
+
+     
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css /> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA1.jpg">
+                <div class="box-content">
+                    <h3 class="title">Toyota Prius 2023 </h3>
+                    <span class="post">PKR 1.47 crore </span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA2.jpg">
+                <div class="box-content">
+                    <h3 class="title">Toyota Corolla 2023</h3>
+                    <span class="post">PKR 61.7 - 78.0 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA3.jpg">
+                <div class="box-content">
+                    <h3 class="title">Toyota Yaris 2023</h3>
+                    <span class="post">PKR 45.0 - 59.7 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA4.jpg">
+                <div class="box-content">
+                    <h3 class="title">Suzuki Swift 2023</h3>
+                    <span class="post">PKR 42.6 - 49.6 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA5.jpg">
+                <div class="box-content">
+                    <h3 class="title">Suzuki Wagon R 2023</h3>
+                    <span class="post">PKR 32.1 - 37.4 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA6.png">
+                <div class="box-content">
+                    <h3 class="title">Suzuki Cultus 2023 </h3>
+                    <span class="post">PKR 37.2 - 43.7 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA7.png">
+                <div class="box-content">
+                    <h3 class="title">Suzuki Alto 2023</h3>
+                    <span class="post">PKR 22.5 - 29.4 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA8.jpg">
+                <div class="box-content">
+                    <h3 class="title">Honda Civic 2023</h3>
+                    <span class="post">PKR 86.0 lacs - 1.02 crore</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA9.jpg">
+                <div class="box-content">
+                    <h3 class="title">Honda City 2023</h3>
+                    <span class="post">PKR 48.0 - 59.8 lacs </span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA10.jpg">
+                <div class="box-content">
+                    <h3 class="title">Honda HR-V 2023</h3>
+                    <span class="post">PKR 79.0 - 82.0 lacs</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA11.jpg">
+                <div class="box-content">
+                    <h3 class="title">Toyota Corolla Cross 2024</h3>
+                    <span class="post">PKR 12,000,000.0</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA12.png">
+                <div class="box-content">
+                    <h3 class="title">Peugeot 3008  2023</h3>
+                    <span class="post">PKR 10,500,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA13.jpg">
+                <div class="box-content">
+                    <h3 class="title">MG 3 2023</h3>
+                    <span class="post">PKR 3,000,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA14.png">
+                <div class="box-content">
+                    <h3 class="title">MG 6 2023</h3>
+                    <span class="post">PKR 6,500,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA15.png">
+                <div class="box-content">
+                    <h3 class="title">Peugeot 5008 2023</h3>
+                    <span class="post">PKR 12,000,000 </span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA16.jpg">
+                <div class="box-content">
+                    <h3 class="title">Toyota Corolla 12th Generation  2024</h3>
+                    <span class="post">PKR 8,700,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA17.jpg">
+                <div class="box-content">
+                    <h3 class="title">DFSK Seres 3  2023</h3>
+                    <span class="post">PKR 7,000,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA18.png">
+                <div class="box-content">
+                    <h3 class="title">DFSK Glory 500  2023</h3>
+                    <span class="post">PKR 5,500,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA19.jpg">
+                <div class="box-content">
+                    <h3 class="title">MG 4 2024</h3>
+                    <span class="post">PKR 7,000,000</span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="image/CA20.png">
+                <div class="box-content">
+                    <h3 class="title">MG 5 2023</h3>
+                    <span class="post">PKR 7,000,000 </span>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+</body>
+
+</html>
